@@ -7,7 +7,7 @@
                 <ul class="p-0">
                     @foreach ($projects as $project)
                         <li class="list-unstyled py-1 px-3 my-2  bg-dark">
-                            <a class="text-decoration-none text-white" href="">
+                            <a class="text-decoration-none text-white" href="{{ route('show', $project->id) }}">
                                 {{($project->name) }}
                             </a>
                         </li>
