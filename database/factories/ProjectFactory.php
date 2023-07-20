@@ -17,7 +17,10 @@ class ProjectFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'name' => fake()->company(),
+            'description' => fake()->sentence(),
+            'commit' => fake()->numberBetween(0, 30),
+            'accessible' => fake()->boolean()
         ];
     }
 }
